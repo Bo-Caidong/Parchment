@@ -141,7 +141,7 @@ open class EMPageViewController: UIViewController, UIScrollViewDelegate {
     
     /// The underlying `UIScrollView` responsible for scrolling page views.
     /// - important: Properties should be set with caution to prevent unexpected behavior.
-    open private(set) lazy var scrollView: UIScrollView = {
+    public lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.isPagingEnabled = true
         scrollView.scrollsToTop = false
